@@ -2,10 +2,10 @@
  * 将 maoyang_data-asset-system 的 examples/meta.json + Demo 结构
  * 转换为 marsun_components 的 doc/example.json + doc/*.js 结构（参考 Test 组件）
  */
+import { execSync } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { execSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -13,7 +13,10 @@ const SRC = join(ROOT, 'src/components');
 const MAOYANG = join(ROOT, '../maoyang_data-asset-system/src/components');
 
 const syncComponentSources = () => {
-  if (!existsSync(MAOYANG)) return;
+  if (!existsSync(MAOYANG)) {
+    console.warn('⚠ maoyang components dir not found, skip source sync');
+    return;
+  }
   execSync(
     `rsync -a --exclude 'examples' --exclude 'routes.tsx' "${MAOYANG}/" "${SRC}/"`,
     { stdio: 'inherit' },
@@ -263,15 +266,11 @@ const processMeta = (metaPath) => {
 };
 
 console.log('🔄 Converting examples/meta.json → doc/example.json ...\n');
-syncComponentSources();
-
-const maoyangComponentsDir = MAOYANG;
-if (!existsSync(maoyangComponentsDir)) {
-  console.error('maoyang components dir not found:', maoyangComponentsDir);
-  process.exit(1);
+if (process.env.SKIP_SYNC !== '1') {
+  syncComponentSources();
 }
 
-for (const metaPath of findMetaFiles(maoyangComponentsDir)) {
+for (const metaPath of findMetaFiles(MAOYANG)) {
   processMeta(metaPath);
 }
 console.log('\n✨ Done');

@@ -14,10 +14,9 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/Common": ["src/components/Common"],
-      "@/components/Common/*": ["src/components/Common/*"],
-      "@/components/AgentHub": ["src/components/AgentHub"],
-      "@/components/AgentHub/*": ["src/components/AgentHub/*"],
+      "@/components/System": ["src/components/system"],
+      "@/components/System/*": ["src/components/system/*"],
+      "@/components/*": ["src/components/*"],
       "@/*": ["../maoyang_data-asset-system/src/*"],
       "@components/*": ["src/components/*"]
     }
