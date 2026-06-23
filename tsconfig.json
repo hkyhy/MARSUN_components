@@ -17,7 +17,7 @@
       "@/components/System": ["src/components/system"],
       "@/components/System/*": ["src/components/system/*"],
       "@/components/*": ["src/components/*"],
-      "@/*": ["../maoyang_data-asset-system/src/*"],
+      "@/*": ["src/host/*"],
       "@components/*": ["src/components/*"]
     }
   },

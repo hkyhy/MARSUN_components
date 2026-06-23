@@ -7,7 +7,7 @@
   "author": "",
   "main": "craco.config.js",
   "scripts": {
-    "start": "cross-env PORT=3001 MODULES_DEV_PUBLIC_URL=/ craco start",
+    "start": "cross-env PORT=3011 MODULES_DEV_PUBLIC_URL=/ craco start",
     "build": "cross-env COMPONENTS_NAME=components-name MODULES_DEV_PUBLIC_URL=/components-name  craco build",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
@@ -26,9 +26,11 @@
     "@js-preview/excel": "^1.7.14",
     "@kne/button-group": "^0.1.24",
     "antd": "^5.29.3",
+    "axios": "^1.18.0",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
     "docx-preview": "^0.3.7",
+    "lucide-react": "^1.18.0",
     "mermaid": "^11.15.0",
     "pptx-preview": "^1.0.7",
     "react": "^18.3.1",
@@ -37,13 +39,13 @@
     "react-router-dom": "^6.30.4",
     "@kne/react-scripts": "^5.1.5",
     "remark-gfm": "^4.0.1",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@kne/craco": "^7.1.3",
     "@kne/modules-dev": "^2.3.4",
     "antd": "^5.29.3",
-    "axios": "^1.18.0",
     "classnames": "^2.5.1",
     "cross-env": "^7.0.3",
     "http-proxy-middleware": "^2.0.10",

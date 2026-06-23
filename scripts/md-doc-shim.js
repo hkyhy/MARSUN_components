@@ -1,36 +1,11 @@
 const crypto = require('node:crypto');
+const fs = require('fs-extra');
 const path = require('path');
 const { unescape } = require('html-escaper');
 
-const mixinLoadPaths = [
-  path.resolve(__dirname, '../../maoyang_data-asset-system/src/styles'),
-];
+const mixinLoadPaths = [path.resolve(__dirname, '../src/host/styles')];
 
-const mdDocPath = require.resolve('@kne/md-doc');
-
-const patchMdDocStyleTransform = () => {
-  const fs = require('fs');
-  const marker = '/* marsun-mixin-load-paths */';
-  let code = fs.readFileSync(mdDocPath, 'utf8');
-  if (code.includes(marker)) {
-    return;
-  }
-
-  const loadPathsLiteral = JSON.stringify(mixinLoadPaths);
-  code = code.replace(
-    'const result = sass.compileString(`.${styleId}{${unescape(styleString)}}`);',
-    `${marker}
-    const _raw = unescape(styleString).trim();
-    const _needsMixins = /@include\\s+\\w+/.test(_raw) && !/@use\\s+['"]mixins['"]/.test(_raw);
-    const _scss = _needsMixins ? \`@use 'mixins' as *;\\n.\${styleId}{\${_raw}}\` : \`.\${styleId}{\${_raw}}\`;
-    const result = sass.compileString(_scss, _needsMixins ? { loadPaths: ${loadPathsLiteral} } : undefined);`,
-  );
-  fs.writeFileSync(mdDocPath, code);
-  delete require.cache[mdDocPath];
-};
-
-patchMdDocStyleTransform();
-const mdDoc = require(mdDocPath);
+const mdDoc = require('@kne/md-doc');
 
 const generateStyleId = (name) =>
   name.replace(/[@\/\-]/g, '_') + '_' + crypto.createHash('md5').update(name).digest('hex').slice(0, 5);
@@ -81,9 +56,50 @@ const styleTransform = (name, styleString) => {
   return output;
 };
 
-const parse = (text) => mdDoc.parse(text);
+const extractExampleStyle = (text) => {
+  const match = text.match(/####\s*示例样式[\s\S]*?```scss\n([\s\S]*?)```/);
+  return match ? match[1] : '';
+};
 
-const stringify = async (options = {}) => mdDoc.stringify(options);
+const parse = (text) => {
+  const data = mdDoc.parse(text);
+  const styleString = extractExampleStyle(text);
+
+  if (!styleString.trim() || !/@include\s+\w+/.test(styleString)) {
+    return data;
+  }
+
+  const styleObject = styleTransform(data.name, styleString);
+  data.example = data.example || {};
+  data.example.className = styleObject.className;
+  data.example.style = styleObject.style;
+
+  return data;
+};
+
+const stringify = async (options = {}) => {
+  const result = await mdDoc.stringify(options);
+  const stylePath = path.resolve(options.baseDir || process.cwd(), './doc/style.scss');
+
+  if (!(await fs.pathExists(stylePath))) {
+    return result;
+  }
+
+  const styleString = await fs.readFile(stylePath, 'utf8');
+  if (!/@include\s+\w+/.test(styleString)) {
+    return result;
+  }
+
+  const name = result.data?.name || path.basename(options.baseDir || '');
+  const styleObject = styleTransform(name, styleString);
+
+  if (result.data?.example) {
+    result.data.example.className = styleObject.className;
+    result.data.example.style = styleObject.style;
+  }
+
+  return result;
+};
 
 module.exports = {
   parse,

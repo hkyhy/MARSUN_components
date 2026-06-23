@@ -1,0 +1,154 @@
+/* Markdown 文件预览样式 */
+.markdown-preview {
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-preview h1 {
+  font-size: 2em;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h3 {
+  font-size: 1.25em;
+}
+
+.markdown-preview p,
+.markdown-preview code {
+  white-space: pre-wrap;
+}
+
+.markdown-preview p,
+.markdown-preview ul,
+.markdown-preview ol,
+.markdown-preview blockquote,
+.markdown-preview pre,
+.markdown-preview table {
+  margin: 0;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  margin: 0;
+  padding-left: 2em;
+}
+
+.markdown-preview blockquote {
+  padding: 0 1em;
+  color: rgba(0, 0, 0, 0.65);
+  border-left: 4px solid #d9d9d9;
+}
+
+.markdown-preview code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.markdown-preview pre {
+  padding: 1em;
+  overflow: auto;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.markdown-preview pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.markdown-preview table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  padding: 0.5em 1em;
+  border: 1px solid #d9d9d9;
+}
+
+.markdown-preview th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.markdown-preview hr {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin: 0;
+}
+
+.markdown-preview a {
+  color: var(--primary-color, #1677ff);
+  text-decoration: none;
+}
+
+.markdown-preview a:hover {
+  text-decoration: underline;
+}
+
+.markdown-preview pre:has(.mermaid-block) {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.markdown-preview .mermaid-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  padding: 0.75rem;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+.markdown-preview .mermaid-block svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.markdown-preview .mermaid-block--fallback,
+.markdown-preview .mermaid-block--loading {
+  display: block;
+  text-align: center;
+}
+
+.markdown-preview .mermaid-block--fallback pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}

@@ -1,0 +1,34 @@
+/* antd 弹层等无法包裹 VirtualScrollbar 的场景 */
+.ant-modal-body,
+.ant-select-dropdown .rc-virtual-list-holder,
+.ant-table-body,
+.ant-drawer-body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(102, 102, 102, 0.45) transparent;
+}
+
+.ant-modal-body::-webkit-scrollbar,
+.ant-select-dropdown .rc-virtual-list-holder::-webkit-scrollbar,
+.ant-table-body::-webkit-scrollbar,
+.ant-drawer-body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+.ant-modal-body::-webkit-scrollbar-thumb,
+.ant-select-dropdown .rc-virtual-list-holder::-webkit-scrollbar-thumb,
+.ant-table-body::-webkit-scrollbar-thumb,
+.ant-drawer-body::-webkit-scrollbar-thumb {
+  min-height: 24px;
+  min-width: 24px;
+  border-radius: 16px;
+  background-color: rgba(102, 102, 102, 0.45);
+}
+
+.ant-modal-body::-webkit-scrollbar-thumb:hover,
+.ant-select-dropdown .rc-virtual-list-holder::-webkit-scrollbar-thumb:hover,
+.ant-table-body::-webkit-scrollbar-thumb:hover,
+.ant-drawer-body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(102, 102, 102, 0.65);
+}

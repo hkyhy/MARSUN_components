@@ -2,8 +2,23 @@
 const path = require('path');
 const fs = require('fs-extra');
 
-const maoyangSrc = path.resolve(__dirname, '../maoyang_data-asset-system/src');
+const hostSrc = path.resolve(__dirname, './src/host');
 const componentsDir = path.resolve(__dirname, './src/components');
+const systemDir = path.resolve(__dirname, './src/components/system');
+
+const hostAliasDirs = ['api', 'constants', 'hooks', 'icons', 'stores', 'styles', 'types', 'utils'];
+
+const webpackAliases = {
+  '@/components/System': systemDir,
+  '@/components': componentsDir,
+  '@root': path.resolve('./src'),
+  '@components': componentsDir,
+  ...Object.fromEntries(hostAliasDirs.map((dir) => [`@/${dir}`, path.join(hostSrc, dir)])),
+  '@kne/example-driver': path.resolve(
+    __dirname,
+    'node_modules/@kne/modules-dev/node_modules/@kne/example-driver',
+  ),
+};
 
 const getNestedModuleList = async (moduleBaseDir) => {
   const output = [];
@@ -31,17 +46,8 @@ module.exports = {
   context: path.resolve(__dirname),
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
-    alias: {
-      '@root': path.resolve('./src'),
-      '@components': path.resolve('./src/components'),
-      '@/components/System': path.resolve('./src/components/system'),
-      '@/components': path.resolve('./src/components'),
-      '@': maoyangSrc,
-      '@kne/example-driver': path.resolve(
-        __dirname,
-        'node_modules/@kne/modules-dev/node_modules/@kne/example-driver',
-      ),
-    },
+    alias: webpackAliases,
   },
+  webpackAliases,
   getNestedModuleList,
 };

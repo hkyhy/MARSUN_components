@@ -1,0 +1,91 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.file-type-icon-word {
+  color: var(--file-icon-word);
+}
+
+.file-type-icon-pdf {
+  color: var(--file-icon-pdf);
+}
+
+.file-type-icon-excel {
+  color: var(--file-icon-excel);
+}
+
+.file-type-icon-ppt {
+  color: var(--file-icon-ppt);
+}
+
+.file-type-icon-image {
+  color: var(--file-icon-image);
+}
+
+.file-type-icon-video {
+  color: var(--file-icon-image);
+}
+
+.file-type-icon-markdown {
+  color: var(--file-icon-markdown);
+}
+
+.file-type-icon-visio {
+  color: var(--file-icon-visio);
+}
+
+.file-type-icon-archive {
+  color: var(--file-icon-archive);
+}
+
+.file-type-icon-other {
+  color: var(--file-icon-other);
+}
+
+.file-type-icon-folder {
+  color: var(--file-icon-folder);
+}
