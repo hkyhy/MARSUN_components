@@ -1,5 +1,5 @@
 const fs = require('fs-extra');
-const { stringify } = require('@kne/md-doc');
+const { stringify } = require('./md-doc-shim');
 const VirtualModulesPlugin = require('webpack-virtual-modules');
 const virtualModules = new VirtualModulesPlugin();
 const env = require('@kne/modules-dev/lib/env');

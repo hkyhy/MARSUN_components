@@ -22,6 +22,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ant-design/charts": "^2.6.7",
     "@js-preview/excel": "^1.7.14",
     "@kne/button-group": "^0.1.24",
     "antd": "^5.29.3",
@@ -35,7 +36,8 @@
     "react-markdown": "^10.1.0",
     "react-router-dom": "^6.30.4",
     "@kne/react-scripts": "^5.1.5",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@kne/craco": "^7.1.3",

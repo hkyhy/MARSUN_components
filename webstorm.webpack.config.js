@@ -34,6 +34,7 @@ module.exports = {
     alias: {
       '@root': path.resolve('./src'),
       '@components': path.resolve('./src/components'),
+      '@/components/System': path.resolve('./src/components/system'),
       '@/components': path.resolve('./src/components'),
       '@': maoyangSrc,
       '@kne/example-driver': path.resolve(

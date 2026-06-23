@@ -28,6 +28,11 @@ module.exports = {
   webpack: {
     alias: aliasConfig.resolve.alias,
     configure: (webpackConfig) => {
+      webpackConfig.resolve.alias = {
+        ...webpackConfig.resolve.alias,
+        ...aliasConfig.resolve.alias,
+        '@kne/md-doc': path.resolve(__dirname, 'scripts/md-doc-shim.js'),
+      };
       webpackConfig.resolve.plugins = webpackConfig.resolve.plugins.filter(
         (plugin) => plugin.constructor.name !== 'ModuleScopePlugin',
       );
