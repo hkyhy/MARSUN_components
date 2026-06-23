@@ -5,11 +5,21 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const SRC = join(ROOT, 'src/components');
 const MAOYANG = join(ROOT, '../maoyang_data-asset-system/src/components');
+
+const syncComponentSources = () => {
+  if (!existsSync(MAOYANG)) return;
+  execSync(
+    `rsync -a --exclude 'examples' --exclude 'routes.tsx' "${MAOYANG}/" "${SRC}/"`,
+    { stdio: 'inherit' },
+  );
+  console.log('📦 Synced component sources from maoyang\n');
+};
 
 const toScopeName = (packagePath) => {
   const name = packagePath.replace(/^@components\//, '').replace(/[/\-@]/g, '');
@@ -253,11 +263,15 @@ const processMeta = (metaPath) => {
 };
 
 console.log('🔄 Converting examples/meta.json → doc/example.json ...\n');
-for (const domain of ['Common', 'AgentHub']) {
-  const domainDir = join(MAOYANG, domain);
-  if (!existsSync(domainDir)) continue;
-  for (const metaPath of findMetaFiles(domainDir)) {
-    processMeta(metaPath);
-  }
+syncComponentSources();
+
+const maoyangComponentsDir = MAOYANG;
+if (!existsSync(maoyangComponentsDir)) {
+  console.error('maoyang components dir not found:', maoyangComponentsDir);
+  process.exit(1);
+}
+
+for (const metaPath of findMetaFiles(maoyangComponentsDir)) {
+  processMeta(metaPath);
 }
 console.log('\n✨ Done');

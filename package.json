@@ -14,6 +14,7 @@
     "init": "npm i --legacy-peer-deps",
     "create": "modules-dev-create",
     "migrate-examples": "node scripts/migrate-examples.mjs",
+    "generate-mocks": "node scripts/generate-component-mocks.mjs",
     "sync-readme": "node scripts/sync-readme-from-doc.mjs",
     "strip-example-ts": "node scripts/strip-example-ts.mjs",
     "fix-example-imports": "node scripts/fix-example-imports.mjs",
