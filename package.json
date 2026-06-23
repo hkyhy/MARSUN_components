@@ -1,0 +1,91 @@
+{
+  "name": "marsun_components",
+  "version": "0.1.0",
+  "private": true,
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "license": "ISC",
+  "author": "",
+  "main": "craco.config.js",
+  "scripts": {
+    "start": "cross-env PORT=3001 MODULES_DEV_PUBLIC_URL=/ craco start",
+    "build": "cross-env COMPONENTS_NAME=components-name MODULES_DEV_PUBLIC_URL=/components-name  craco build",
+    "test": "craco test --coverage",
+    "eject": "react-scripts eject",
+    "init": "npm i --legacy-peer-deps",
+    "create": "modules-dev-create",
+    "migrate-examples": "node scripts/migrate-examples.mjs",
+    "sync-readme": "node scripts/sync-readme-from-doc.mjs",
+    "strip-example-ts": "node scripts/strip-example-ts.mjs",
+    "fix-example-imports": "node scripts/fix-example-imports.mjs",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@js-preview/excel": "^1.7.14",
+    "@kne/button-group": "^0.1.24",
+    "antd": "^5.29.3",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.13",
+    "docx-preview": "^0.3.7",
+    "mermaid": "^11.15.0",
+    "pptx-preview": "^1.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.30.4",
+    "@kne/react-scripts": "^5.1.5",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@kne/craco": "^7.1.3",
+    "@kne/modules-dev": "^2.3.4",
+    "antd": "^5.29.3",
+    "axios": "^1.18.0",
+    "classnames": "^2.5.1",
+    "cross-env": "^7.0.3",
+    "http-proxy-middleware": "^2.0.10",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "lodash": "^4.18.1",
+    "prettier": "^2.8.8",
+    "react-router-dom": "^6.30.4",
+    "sass": "^1.101.0",
+    "typescript": "^5.8.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@common/(.*)": "<rootDir>/src/common/$1",
+      "^@components/(.*)": "<rootDir>/src/components/$1",
+      "^@utils/(.*)": "<rootDir>/src/common/utils/$1"
+    }
+  }
+}

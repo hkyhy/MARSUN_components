@@ -1,0 +1,1 @@
+用于在 Tooltip 中展示结构化详情信息，内部统一使用 CommonDescriptions 渲染。

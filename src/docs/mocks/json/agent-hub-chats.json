@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "list": [
+      {
+        "id": "chat-1",
+        "name": "制度问答助手",
+        "description": "基于企业制度知识库，解答考勤、休假、报销等问题",
+        "status": "1",
+        "dataset_ids": ["kb-1"],
+        "prompt_config": { "prologue": "您好，我是制度问答助手，有什么可以帮您？" }
+      },
+      {
+        "id": "chat-2",
+        "name": "技术支持助手",
+        "description": "解答产品 API 与集成相关问题",
+        "status": "1",
+        "dataset_ids": ["kb-2"],
+        "prompt_config": { "prologue": "您好，我是技术支持助手。" }
+      }
+    ],
+    "total": 2,
+    "page": 1,
+    "pageSize": 20
+  }
+}

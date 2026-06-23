@@ -1,0 +1,62 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "部门选择器",
+      "description": "DepartmentSelect 树形下拉选择，支持排除当前节点和标记当前部门",
+      "code": "./department-select.js",
+      "scope": [
+        {
+          "name": "_CommonForm",
+          "packageName": "@components/Common/Form"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "上传者选择器",
+      "description": "UploaderSelect 用户下拉选择",
+      "code": "./uploader-select.js",
+      "scope": [
+        {
+          "name": "_CommonForm",
+          "packageName": "@components/Common/Form"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "步骤式表单弹窗",
+      "description": "StepForm 在 StepModal 基础上集成 Form 校验，每个步骤可声明校验字段",
+      "code": "./step-form.js",
+      "scope": [
+        {
+          "name": "_CommonForm",
+          "packageName": "@components/Common/Form"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

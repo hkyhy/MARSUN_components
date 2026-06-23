@@ -1,0 +1,304 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "引用角标",
+      "description": "CitationInlineBadge 行内引用序号角标，嵌入在回答正文中",
+      "code": "./citation-inline-badge-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "对话输入框",
+      "description": "ChatInput 支持 Enter 发送、Shift+Enter 换行，生成中显示停止按钮",
+      "code": "./chat-input-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "消息气泡",
+      "description": "MessageItem 用户/助手消息、Markdown 渲染、流式打字与引用摘要",
+      "code": "./message-item-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "引用来源面板",
+      "description": "CitationPanel 展示引用文档列表，支持高亮定位与展开详情",
+      "code": "./citation-panel-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "助手卡片",
+      "description": "ChatCard 助手列表卡片，展示关联知识库与操作按钮",
+      "code": "./chat-card-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_AgentHubChatListChatCard",
+          "packageName": "@components/AgentHub/Chat/List/ChatCard"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "对话场景",
+      "description": "消息列表 + 输入框 + 引用面板的完整对话交互",
+      "code": "./chat-conversation.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_AgentHubChatListChatCard",
+          "packageName": "@components/AgentHub/Chat/List/ChatCard"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "会话侧边栏",
+      "description": "SessionSidebar 展示 Agent 标题、新建会话入口与历史对话列表，位于消息区左侧",
+      "code": "./session-sidebar-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_AgentHubChatListChatCard",
+          "packageName": "@components/AgentHub/Chat/List/ChatCard"
+        },
+        {
+          "name": "_AgentHubChatListSessionSidebar",
+          "packageName": "@components/AgentHub/Chat/List/SessionSidebar"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "会话操作按钮",
+      "description": "SessionActionButtons 页面头部清空对话操作",
+      "code": "./session-action-buttons-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_AgentHubChatListChatCard",
+          "packageName": "@components/AgentHub/Chat/List/ChatCard"
+        },
+        {
+          "name": "_AgentHubChatListSessionSidebar",
+          "packageName": "@components/AgentHub/Chat/List/SessionSidebar"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "会话对话布局",
+      "description": "左侧会话侧边栏 + 消息区 + 引用面板，支持会话切换滚动到底部与点击角标打开引用来源",
+      "code": "./chat-session-layout.js",
+      "scope": [
+        {
+          "name": "_AgentHubChat",
+          "packageName": "@components/AgentHub/Chat"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationInlineBadge",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationInlineBadge"
+        },
+        {
+          "name": "_AgentHubChatDetailChatInput",
+          "packageName": "@components/AgentHub/Chat/Detail/ChatInput"
+        },
+        {
+          "name": "_AgentHubChatDetailMessageItem",
+          "packageName": "@components/AgentHub/Chat/Detail/MessageItem"
+        },
+        {
+          "name": "_AgentHubChatDetailCitationPanel",
+          "packageName": "@components/AgentHub/Chat/Detail/CitationPanel"
+        },
+        {
+          "name": "_AgentHubChatListChatCard",
+          "packageName": "@components/AgentHub/Chat/List/ChatCard"
+        },
+        {
+          "name": "_AgentHubChatListSessionSidebar",
+          "packageName": "@components/AgentHub/Chat/List/SessionSidebar"
+        },
+        {
+          "name": "_AgentHubChathooks",
+          "packageName": "@components/AgentHub/Chat/hooks"
+        },
+        {
+          "name": "_CommonVirtualScrollbar",
+          "packageName": "@components/Common/VirtualScrollbar"
+        },
+        {
+          "name": "_AgentHubChatUtilsSmoothScroll",
+          "packageName": "@components/AgentHub/Chat/utils/smoothScroll"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

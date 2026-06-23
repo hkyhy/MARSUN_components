@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "list": [
+      {
+        "id": "doc-1",
+        "name": "员工休假管理制度.pdf",
+        "dataset_id": "kb-1",
+        "type": "pdf",
+        "size": 524288,
+        "run": "DONE",
+        "chunk_count": 48,
+        "create_time": "2026-05-10"
+      },
+      {
+        "id": "doc-2",
+        "name": "考勤管理办法.pdf",
+        "dataset_id": "kb-1",
+        "type": "pdf",
+        "size": 262144,
+        "run": "RUNNING",
+        "chunk_count": 0,
+        "create_time": "2026-06-01"
+      }
+    ],
+    "total": 2,
+    "page": 1,
+    "pageSize": 20
+  }
+}

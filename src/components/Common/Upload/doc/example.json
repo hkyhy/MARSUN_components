@@ -1,0 +1,43 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "面板模式",
+      "description": "variant=panel 拖拽上传面板",
+      "code": "./upload-panel.js",
+      "scope": [
+        {
+          "name": "_CommonUpload",
+          "packageName": "@components/Common/Upload"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "按钮模式",
+      "description": "variant=button 按钮触发上传",
+      "code": "./upload-button.js",
+      "scope": [
+        {
+          "name": "_CommonUpload",
+          "packageName": "@components/Common/Upload"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

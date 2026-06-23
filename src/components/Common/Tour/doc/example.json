@@ -1,0 +1,20 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "AppTour 引导组件",
+      "description": "基于 ref 锚点的引导流程，内置 localStorage 去重",
+      "code": "./tour.js",
+      "scope": [
+        {
+          "name": "_CommonTour",
+          "packageName": "@components/Common/Tour"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

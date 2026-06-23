@@ -1,0 +1,119 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "完整筛选栏",
+      "description": "CommonFilter 完整组合：下拉、输入、日期范围、数字范围筛选器",
+      "code": "./common-filter.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "单选筛选器",
+      "description": "FilterSelect 基础用法与可搜索模式",
+      "code": "./filter-select.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "输入框筛选器",
+      "description": "FilterInput 关键词搜索输入框",
+      "code": "./filter-input.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "日期范围筛选器",
+      "description": "FilterDateRange 日期区间选择，支持快捷选项",
+      "code": "./filter-date-range.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "数字范围筛选器",
+      "description": "FilterNumberRange 数值区间选择，支持单位后缀",
+      "code": "./filter-number-range.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "树形选择筛选器",
+      "description": "FilterTreeSelect 部门树形下拉选择，支持搜索和自动加载",
+      "code": "./filter-tree-select.js",
+      "scope": [
+        {
+          "name": "_CommonFilter",
+          "packageName": "@components/Common/Filter"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

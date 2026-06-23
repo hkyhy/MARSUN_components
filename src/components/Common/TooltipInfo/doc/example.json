@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "基础用法",
+      "description": "hover 触发元素展示 DescriptionItem 详情",
+      "code": "./tooltip-info.js",
+      "scope": [
+        {
+          "name": "_CommonTooltipInfo",
+          "packageName": "@components/Common/TooltipInfo"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

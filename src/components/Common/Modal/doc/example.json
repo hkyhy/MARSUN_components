@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "步骤式弹窗",
+      "description": "StepModal 将多步骤流程封装在 Modal 中，自动管理步骤导航、标题切换和底部按钮",
+      "code": "./step-modal.js",
+      "scope": [
+        {
+          "name": "_CommonModal",
+          "packageName": "@components/Common/Modal"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

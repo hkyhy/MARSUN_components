@@ -1,0 +1,30 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": [
+    {
+      "value": "user-1",
+      "label": "张三",
+      "departmentId": "dept-child-1",
+      "departmentName": "前端组",
+      "email": "zhangsan@example.com",
+      "employeeId": "E001"
+    },
+    {
+      "value": "user-2",
+      "label": "李四",
+      "departmentId": "dept-child-2",
+      "departmentName": "后端组",
+      "email": "lisi@example.com",
+      "employeeId": "E002"
+    },
+    {
+      "value": "user-3",
+      "label": "王五",
+      "departmentId": "dept-child-4",
+      "departmentName": "产品组",
+      "email": "wangwu@example.com",
+      "employeeId": "E003"
+    }
+  ]
+}

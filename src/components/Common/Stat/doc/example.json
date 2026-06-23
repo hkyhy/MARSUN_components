@@ -1,0 +1,51 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "单个卡片",
+      "description": "StatCard 基础展示，带前缀图标和自定义颜色",
+      "code": "./stat-card-single.js",
+      "scope": [
+        {
+          "name": "_CommonStat",
+          "packageName": "@components/Common/Stat"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_icons",
+          "packageName": "@/icons"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "卡片列表",
+      "description": "StatCardList 网格布局，自动计算列数",
+      "code": "./stat-card-list.js",
+      "scope": [
+        {
+          "name": "_CommonStat",
+          "packageName": "@components/Common/Stat"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_icons",
+          "packageName": "@/icons"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

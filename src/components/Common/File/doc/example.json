@@ -1,0 +1,81 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "FileItemView 文件项",
+      "description": "展示文件图标、名称、状态和操作按钮",
+      "code": "./file-item-basic.js",
+      "scope": [
+        {
+          "name": "_CommonFile",
+          "packageName": "@components/Common/File"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "FileLink 文件链接",
+      "description": "以链接形式展示文件",
+      "code": "./file-link.js",
+      "scope": [
+        {
+          "name": "_CommonFile",
+          "packageName": "@components/Common/File"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "FileList 文件列表",
+      "description": "展示文件列表，支持 default 和 link 两种模式",
+      "code": "./file-list.js",
+      "scope": [
+        {
+          "name": "_CommonFile",
+          "packageName": "@components/Common/File"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "FilePreview 文件预览",
+      "description": "文件预览弹窗，支持图片、PDF、视频、Excel、文本等格式",
+      "code": "./file-preview.js",
+      "scope": [
+        {
+          "name": "_CommonFile",
+          "packageName": "@components/Common/File"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

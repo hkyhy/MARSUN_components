@@ -1,0 +1,12 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "totalFiles": 128,
+    "pendingReview": 12,
+    "approved": 98,
+    "rejected": 5,
+    "totalStorage": 1024,
+    "monthlyUploads": 42
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "基本用法",
+      "description": "所有预定义语义颜色的展示",
+      "code": "./semantic-tag-basic.js",
+      "scope": [
+        {
+          "name": "_CommonTag",
+          "packageName": "@components/Common/Tag"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "审核状态场景",
+      "description": "在列表页 Table、简历详情页等场景下的状态标签使用",
+      "code": "./semantic-tag-review.js",
+      "scope": [
+        {
+          "name": "_CommonTag",
+          "packageName": "@components/Common/Tag"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "多标签组合场景",
+      "description": "多个标签并列展示，如已推荐简历+已退票等多状态并存",
+      "code": "./semantic-tag-multi.js",
+      "scope": [
+        {
+          "name": "_CommonTag",
+          "packageName": "@components/Common/Tag"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

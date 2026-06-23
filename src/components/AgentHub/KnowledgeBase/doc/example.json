@@ -1,0 +1,105 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "解析状态标签",
+      "description": "ParseStatusTag 展示文档解析各阶段状态",
+      "code": "./parse-status-tag-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubKnowledgeBase",
+          "packageName": "@components/AgentHub/KnowledgeBase"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseDetailParseStatusTag",
+          "packageName": "@components/AgentHub/KnowledgeBase/Detail/ParseStatusTag"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "筛选栏",
+      "description": "KBFilterBar 按知识库名称关键词筛选",
+      "code": "./knowledge-base-filter.js",
+      "scope": [
+        {
+          "name": "_AgentHubKnowledgeBase",
+          "packageName": "@components/AgentHub/KnowledgeBase"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseDetailParseStatusTag",
+          "packageName": "@components/AgentHub/KnowledgeBase/Detail/ParseStatusTag"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseListFilterBar",
+          "packageName": "@components/AgentHub/KnowledgeBase/List/FilterBar"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "知识库卡片",
+      "description": "KnowledgeCard 展示文档数、分块数、解析进度与操作按钮",
+      "code": "./knowledge-card-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubKnowledgeBase",
+          "packageName": "@components/AgentHub/KnowledgeBase"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseDetailParseStatusTag",
+          "packageName": "@components/AgentHub/KnowledgeBase/Detail/ParseStatusTag"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseListFilterBar",
+          "packageName": "@components/AgentHub/KnowledgeBase/List/FilterBar"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseListKnowledgeCard",
+          "packageName": "@components/AgentHub/KnowledgeBase/List/KnowledgeCard"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "文档列表",
+      "description": "DocumentTable 知识库内文档管理表格，含解析/停止/删除操作",
+      "code": "./document-table-basic.js",
+      "scope": [
+        {
+          "name": "_AgentHubKnowledgeBase",
+          "packageName": "@components/AgentHub/KnowledgeBase"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseDetailParseStatusTag",
+          "packageName": "@components/AgentHub/KnowledgeBase/Detail/ParseStatusTag"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseListFilterBar",
+          "packageName": "@components/AgentHub/KnowledgeBase/List/FilterBar"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseListKnowledgeCard",
+          "packageName": "@components/AgentHub/KnowledgeBase/List/KnowledgeCard"
+        },
+        {
+          "name": "_AgentHubKnowledgeBaseDetailDocumentTable",
+          "packageName": "@components/AgentHub/KnowledgeBase/Detail/DocumentTable"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

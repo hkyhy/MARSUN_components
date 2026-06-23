@@ -1,0 +1,28 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "基础用法",
+      "description": "PageHeaderLayout 标题 + 操作按钮组合",
+      "code": "./page-header-layout.js",
+      "scope": [
+        {
+          "name": "_CommonLayout",
+          "packageName": "@components/Common/Layout"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_kneButtonGroup",
+          "packageName": "@kne/button-group"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

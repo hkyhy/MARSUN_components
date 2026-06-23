@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/Common": ["src/components/Common"],
+      "@/components/Common/*": ["src/components/Common/*"],
+      "@/components/AgentHub": ["src/components/AgentHub"],
+      "@/components/AgentHub/*": ["src/components/AgentHub/*"],
+      "@/*": ["../maoyang_data-asset-system/src/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["src"]
+}

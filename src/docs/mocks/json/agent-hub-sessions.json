@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "list": [
+      {
+        "id": "sess-1",
+        "chat_id": "chat-1",
+        "name": "年假制度咨询",
+        "messages": [{ "id": "m1", "role": "user", "content": "请问正式员工的年假有多少天？" }],
+        "create_time": 1718000000000,
+        "update_time": 1718003600000
+      },
+      {
+        "id": "sess-2",
+        "chat_id": "chat-1",
+        "name": "报销流程咨询",
+        "messages": [{ "id": "m2", "role": "user", "content": "报销流程需要哪些材料？" }],
+        "create_time": 1717900000000,
+        "update_time": 1717910000000
+      }
+    ],
+    "total": 2,
+    "page": 1,
+    "pageSize": 50
+  }
+}

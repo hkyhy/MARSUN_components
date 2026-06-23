@@ -1,0 +1,43 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "hasPermission 权限判断",
+      "description": "判断当前用户是否拥有指定权限，返回 boolean",
+      "code": "./auth.js",
+      "scope": [
+        {
+          "name": "_CommonAuth",
+          "packageName": "@components/Common/Auth"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "PermissionGuard 权限守卫",
+      "description": "包裹需要权限控制的区域，无权限时隐藏内容或显示 fallback",
+      "code": "./permission-guard.js",
+      "scope": [
+        {
+          "name": "_CommonAuth",
+          "packageName": "@components/Common/Auth"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}
