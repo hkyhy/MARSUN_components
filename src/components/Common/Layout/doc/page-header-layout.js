@@ -1,8 +1,8 @@
 const { PageHeaderLayout } = _Common;
-const { default: ButtonGroup } = _kneButtonGroup;
+import ButtonGroup from '@kne/button-group';
 
 const PageHeaderLayoutDemo = () => {
-  const headerListArray = [
+  const headerListArray: Record<string, unknown>[] = [
     {
       children: '新建文件夹',
       onClick: () => console.log('新建文件夹'),

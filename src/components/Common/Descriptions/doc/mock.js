@@ -1,7 +1,7 @@
 
 
 /** 基础描述列表 mock 数据 */
-export const MOCK_BASIC_ITEMS = [
+export const MOCK_BASIC_ITEMS: DescriptionItem[] = [
   { label: '文件名', value: '示例文档.pdf' },
   { label: '大小', value: '2.4 MB' },
   { label: '上传者', value: '张三' },
@@ -11,7 +11,7 @@ export const MOCK_BASIC_ITEMS = [
 ];
 
 /** 三列资产详情 mock 数据 */
-export const MOCK_ASSET_ITEMS = [
+export const MOCK_ASSET_ITEMS: DescriptionItem[] = [
   { label: '资产编号', value: 'AST-2026-001' },
   { label: '资产名称', value: 'MacBook Pro 16寸' },
   { label: '分类', value: '电子设备' },

@@ -1,0 +1,115 @@
+{
+  "apis": {
+    "GET /agent-hub/datasets": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "list": [
+          {
+            "id": "kb-1",
+            "name": "企业制度手册",
+            "description": "包含考勤、休假、报销等制度文档",
+            "chunk_count": 1280,
+            "document_count": 24,
+            "token_num": 520000,
+            "embedding_model": "BAAI/bge-m3",
+            "done_count": 22,
+            "running_count": 1,
+            "fail_count": 1,
+            "unstart_count": 0
+          },
+          {
+            "id": "kb-2",
+            "name": "产品技术文档",
+            "description": "API 文档与架构设计说明",
+            "chunk_count": 860,
+            "document_count": 12,
+            "token_num": 310000,
+            "embedding_model": "BAAI/bge-large-zh-v1.5",
+            "done_count": 12,
+            "running_count": 0,
+            "fail_count": 0,
+            "unstart_count": 0
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "pageSize": 20
+      }
+    },
+    "GET /agent-hub/chats": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "list": [
+          {
+            "id": "chat-1",
+            "name": "制度问答助手",
+            "description": "基于企业制度知识库，解答考勤、休假、报销等问题",
+            "status": "1",
+            "dataset_ids": [
+              "kb-1"
+            ],
+            "prompt_config": {
+              "prologue": "您好，我是制度问答助手，有什么可以帮您？"
+            }
+          },
+          {
+            "id": "chat-2",
+            "name": "技术支持助手",
+            "description": "解答产品 API 与集成相关问题",
+            "status": "1",
+            "dataset_ids": [
+              "kb-2"
+            ],
+            "prompt_config": {
+              "prologue": "您好，我是技术支持助手。"
+            }
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "pageSize": 20
+      }
+    },
+    "GET /agent-hub/chats/:id/sessions": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "list": [
+          {
+            "id": "sess-1",
+            "chat_id": "chat-1",
+            "name": "年假制度咨询",
+            "messages": [
+              {
+                "id": "m1",
+                "role": "user",
+                "content": "请问正式员工的年假有多少天？"
+              }
+            ],
+            "create_time": 1718000000000,
+            "update_time": 1718003600000
+          },
+          {
+            "id": "sess-2",
+            "chat_id": "chat-1",
+            "name": "报销流程咨询",
+            "messages": [
+              {
+                "id": "m2",
+                "role": "user",
+                "content": "报销流程需要哪些材料？"
+              }
+            ],
+            "create_time": 1717900000000,
+            "update_time": 1717910000000
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "pageSize": 50
+      }
+    }
+  }
+}

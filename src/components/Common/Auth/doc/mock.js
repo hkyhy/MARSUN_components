@@ -28,4 +28,4 @@ export const PERMISSION_CONFIG = {
     REVIEWER: ['file:view', 'file:submit', 'review:view', 'review:approve', 'review:reject'],
     UPLOADER: ['file:view', 'file:upload', 'file:submit', 'review:view'],
   },
-};
+} as const;

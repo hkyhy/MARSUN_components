@@ -1,12 +1,6 @@
 const { PermissionGuard } = _CommonAuth;
-const UserRole = {
-  SYSTEM_ADMIN: 'SYSTEM_ADMIN',
-  DEPT_LEADER: 'DEPT_LEADER',
-  REVIEWER: 'REVIEWER',
-  NORMAL_USER: 'NORMAL_USER',
-  SENIOR_EXECUTIVE: 'SENIOR_EXECUTIVE',
-};
-const { Button } = _antd;
+import { UserRole } from '@/types';
+import { Button } from 'antd';
 
 /** PermissionGuard 权限守卫示例 */
 const PermissionGuardDemo = () => (

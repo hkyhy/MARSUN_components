@@ -1,0 +1,192 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ranking-detail-table-meta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background-color: var(--bg-color-grey-1);
+  color: var(--font-color-grey);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ranking-detail-table-icon {
+  font-weight: 500;
+}
+
+.ranking-detail-table-title {
+  color: var(--font-color-grey);
+}
+
+.ranking-detail-table-desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ranking-detail-table-actions {
+  flex: 1;
+}
+
+.ranking-detail-table-toolbar {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  width: 40px;
+  text-align: right;
+}
+
+.ranking-detail-table-list {
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  width: 40px;
+  text-align: right;
+}
+
+.ranking-detail-table-empty {
+  margin-left: 4px;
+}
+
+.ranking-detail-table-loading {
+  margin-top: 16px;
+}

@@ -1,5 +1,5 @@
 const { default: ParseStatusTag } = _AgentHubKnowledgeBaseDetailParseStatusTag;
-const { Space } = _antd;
+import { Space } from 'antd';
 
 const ParseStatusTagBasicDemo = () => (
   <Space wrap>

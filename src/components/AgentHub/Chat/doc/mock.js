@@ -1,6 +1,6 @@
 
 
-export const mockDatasets = [
+export const mockDatasets: Dataset[] = [
   {
     id: 'kb-1',
     name: '企业制度手册',
@@ -27,7 +27,7 @@ export const mockDatasets = [
   },
 ];
 
-export const mockChatAssistants = [
+export const mockChatAssistants: ChatAssistant[] = [
   {
     id: 'chat-1',
     name: '制度问答助手',
@@ -53,7 +53,7 @@ export const mockChatAssistants = [
   },
 ];
 
-export const mockCitations = [
+export const mockCitations: Citation[] = [
   {
     id: 'cite-1',
     doc_id: 'doc-1',
@@ -74,13 +74,13 @@ export const mockCitations = [
   },
 ];
 
-export const mockUserMessage = {
+export const mockUserMessage: ChatMessage = {
   id: 'msg-1',
   role: 'user',
   content: '请问正式员工的年假有多少天？',
 };
 
-export const mockAssistantMessage = {
+export const mockAssistantMessage: ChatMessage = {
   id: 'msg-2',
   role: 'assistant',
   content:
@@ -88,14 +88,14 @@ export const mockAssistantMessage = {
   citations: mockCitations,
 };
 
-export const mockStreamingMessage = {
+export const mockStreamingMessage: ChatMessage = {
   id: 'msg-3',
   role: 'assistant',
   content: '',
   streaming: true,
 };
 
-export const mockChatSessions = [
+export const mockChatSessions: ChatSession[] = [
   {
     id: 'sess-1',
     chat_id: 'chat-1',

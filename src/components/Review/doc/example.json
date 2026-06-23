@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "Review 组合",
+      "description": "筛选栏 + 时间线 + 通过/驳回弹窗",
+      "code": "./review.js",
+      "scope": [
+        {
+          "name": "_Review",
+          "packageName": "@components/Review"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

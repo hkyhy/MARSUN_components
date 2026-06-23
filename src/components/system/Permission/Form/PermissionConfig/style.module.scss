@@ -1,0 +1,132 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.permission-config-title {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 8px;
+  @media (min-width: 640px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.permission-config-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px; padding-right: 12px;
+  padding-top: 8px; padding-bottom: 8px;
+  background-color: var(--bg-color-grey);
+}
+
+.permission-config-actions {
+  font-size: var(--font-size-small);
+}
+
+.permission-config-toolbar {
+  font-size: 12px;
+  color: var(--font-color-grey-1);
+}
+
+.permission-config-list {
+  border-top-width: 1px; border-top-style: solid;
+  padding-top: 16px;
+}
+
+.permission-config-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.permission-config-loading {
+  font-weight: 500;
+}
+
+.permission-config-content {
+  margin-bottom: 12px;
+  padding-left: 12px; padding-right: 12px;
+  padding-top: 8px; padding-bottom: 8px;
+  border-width: 1px; border-style: solid;
+  font-size: var(--font-size-small);
+}

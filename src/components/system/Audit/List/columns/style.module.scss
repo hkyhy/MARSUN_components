@@ -1,0 +1,22 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+.columns-detail-link {
+  color: var(--primary-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}

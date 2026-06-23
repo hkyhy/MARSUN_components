@@ -1,5 +1,5 @@
 const { default: ChatInput } = _AgentHubChatDetailChatInput;
-const { Switch, Typography } = _antd;
+import { Switch, Typography } from 'antd';
 
 const { Text } = Typography;
 

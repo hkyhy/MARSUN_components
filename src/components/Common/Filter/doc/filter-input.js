@@ -1,7 +1,10 @@
-const { FilterInput } = _CommonFilter;
+const { FilterInput } = _Common;
 
+/**
+ * FilterInput 输入框筛选示例
+ */
 const FilterInputDemo = () => {
-  const [value, setValue] = React.useState(undefined);
+  const [value, setValue] = useState<string>(undefined);
 
   return (
     <FilterInput

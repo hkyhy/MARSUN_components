@@ -1,5 +1,5 @@
 const { SessionActionButtons } = _AgentHubChat;
-const { message } = _antd;
+import { message } from 'antd';
 
 const SessionActionButtonsBasicDemo = () => {
   const [streaming, setStreaming] = React.useState(false);

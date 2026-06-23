@@ -1,0 +1,158 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-timeline-timeline-item {
+  padding-bottom: 8px;
+}
+
+.review-timeline-timeline-header {
+  @include flex-row(8px);
+  margin-bottom: 4px;
+}
+
+.review-timeline-timeline-time {
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey);
+}
+
+.review-timeline-timeline-operator {
+  font-size: var(--font-size-default);
+  color: var(--font-color);
+}
+
+.review-timeline-timeline-comment {
+  font-size: var(--font-size-default);
+  color: var(--font-color-grey);
+}
+
+.review-timeline-timeline-file-links {
+  @include flex-row(12px);
+  margin-top: 4px;
+}
+
+.review-timeline-download-link {
+  @include flex-row(4px);
+  font-size: var(--font-size-small);
+  color: var(--info-color);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.review-timeline-timeline-status-change {
+  margin-top: 4px;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey-1);
+}
+
+.review-timeline-timeline-status-change-small {
+  margin-left: 4px;
+  vertical-align: middle;
+}

@@ -1,5 +1,7 @@
-const { FilterTreeSelect } = _CommonFilter;
+const { FilterTreeSelect } = _Common;
 
+
+/** Mock 部门树数据 */
 const MOCK_DEPT_TREE = [
   {
     id: 'root-1',
@@ -34,9 +36,9 @@ const MOCK_DEPT_TREE = [
 ];
 
 const FilterTreeSelectDemo = () => {
-  const [value, setValue] = React.useState(undefined);
+  const [value, setValue] = useState<string>(undefined);
 
-  const handleChange = (v) => {
+  const handleChange = (v: string | string[]) => {
     setValue(typeof v === 'string' ? v : undefined);
   };
 

@@ -1,5 +1,7 @@
 
-const mockFileItems = [
+import { ReviewStatus } from '@/types';
+
+export const mockFileItems: FileItemType[] = [
   {
     id: '1',
     name: '项目需求文档.docx',
@@ -11,7 +13,7 @@ const mockFileItems = [
     departmentName: '技术部',
     uploaderId: 'user1',
     uploaderName: '张三',
-    reviewStatus: 'APPROVED',
+    reviewStatus: ReviewStatus.APPROVED,
     version: 1,
     createdAt: '2026-01-15T10:30:00Z',
     updatedAt: '2026-01-15T10:30:00Z',
@@ -27,7 +29,7 @@ const mockFileItems = [
     departmentName: '技术部',
     uploaderId: 'user2',
     uploaderName: '李四',
-    reviewStatus: 'PENDING_REVIEWER',
+    reviewStatus: ReviewStatus.PENDING_REVIEWER,
     version: 2,
     createdAt: '2026-02-20T14:00:00Z',
     updatedAt: '2026-03-01T09:15:00Z',
@@ -43,7 +45,7 @@ const mockFileItems = [
     departmentName: '产品部',
     uploaderId: 'user3',
     uploaderName: '王五',
-    reviewStatus: 'DRAFT',
+    reviewStatus: ReviewStatus.DRAFT,
     version: 1,
     createdAt: '2026-03-10T16:45:00Z',
     updatedAt: '2026-03-10T16:45:00Z',
@@ -59,7 +61,7 @@ const mockFileItems = [
     departmentName: '技术部',
     uploaderId: 'user1',
     uploaderName: '张三',
-    reviewStatus: 'APPROVED',
+    reviewStatus: ReviewStatus.APPROVED,
     version: 1,
     createdAt: '2026-01-20T11:00:00Z',
     updatedAt: '2026-01-20T11:00:00Z',
@@ -75,7 +77,7 @@ const mockFileItems = [
     departmentName: '技术部',
     uploaderId: 'user2',
     uploaderName: '李四',
-    reviewStatus: 'REVIEWING_REVIEWER',
+    reviewStatus: ReviewStatus.REVIEWING_REVIEWER,
     version: 3,
     createdAt: '2026-02-01T08:00:00Z',
     updatedAt: '2026-03-05T17:30:00Z',
@@ -91,7 +93,7 @@ const mockFileItems = [
     departmentName: '产品部',
     uploaderId: 'user3',
     uploaderName: '王五',
-    reviewStatus: 'DRAFT',
+    reviewStatus: ReviewStatus.DRAFT,
     version: 1,
     createdAt: '2026-03-11T16:45:00Z',
     updatedAt: '2026-03-11T16:45:00Z',

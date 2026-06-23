@@ -1,0 +1,216 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.import-modal-import-section {
+  margin-bottom: 16px;
+}
+
+.import-modal-template-row {
+  @include flex-between;
+  margin-bottom: 8px;
+}
+
+.import-modal-template-label {
+  color: var(--font-color-grey);
+}
+
+.import-modal-template-hint {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.import-modal-template-list {
+  list-style: disc;
+  padding-left: 16px;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.import-modal-alert-spacing {
+  margin-bottom: 12px;
+}
+
+.import-modal-error-alert {
+  margin-top: 12px;
+}
+
+.import-modal-validation-list {
+  list-style: disc;
+  padding-left: 16px;
+  margin-bottom: 0;
+  max-height: 128px;
+  overflow-y: auto;
+  font-size: var(--font-size-small);
+}
+
+.import-modal-preview-table {
+  margin-top: 16px;
+}
+
+.import-modal-tree-node {
+  @include flex-between;
+  width: 100%;
+  padding: 4px 0;
+
+  &:hover .treeActions {
+    opacity: 1;
+  }
+}
+
+.import-modal-tree-label {
+  flex: 1;
+}
+
+.import-modal-tree-actions {
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-left: 8px;
+}
+
+.import-modal-item {
+  margin-bottom: 16px;
+}
+
+.import-modal-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.import-modal-label {
+  color: var(--font-color-grey);
+}
+
+.import-modal-value {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.import-modal-meta {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.import-modal-icon {
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+.import-modal-title {
+  margin-bottom: 12px;
+}
+
+.import-modal-desc {
+  margin-top: 12px;
+}
+
+.import-modal-actions {
+  padding-left: 16px;
+  margin-bottom: 0;
+  max-height: 128px;
+  overflow-y: auto;
+  font-size: var(--font-size-small);
+}
+
+.import-modal-toolbar {
+  margin-top: 16px;
+}

@@ -1,0 +1,264 @@
+@use '@/styles/mixins' as *;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.folder-upload-modal-hint-row {
+  @include flex-row(6px);
+  margin-top: 8px;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey-1);
+}
+
+.folder-upload-modal-footer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.folder-upload-modal-skipped-block {
+  margin-top: 8px;
+}
+
+.folder-upload-modal-skipped-title {
+  color: var(--warning-color);
+}
+
+.folder-upload-modal-skipped-list {
+  margin-top: 4px;
+  max-height: 192px;
+  overflow: auto;
+  padding-left: 16px;
+  list-style: disc;
+  font-size: var(--font-size-default);
+  color: var(--font-color-grey);
+}
+
+.folder-upload-modal-skipped-list-compact {
+  max-height: 160px;
+}
+
+.folder-upload-modal-preview-tree-box {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid var(--font-color-grey-4);
+  border-radius: 4px;
+  max-height: 288px;
+  overflow: auto;
+}
+
+.folder-upload-modal-preview-tree-label {
+  font-size: var(--font-size-small);
+}
+
+.folder-upload-modal-preview-tree {
+  margin-top: 4px;
+}
+
+.folder-upload-modal-result-left {
+  text-align: left;
+}
+
+.folder-upload-modal-warning-row {
+  @include flex-row(4px);
+}
+
+.folder-upload-modal-result-skipped-list {
+  margin-top: 8px;
+  max-height: 192px;
+  overflow: auto;
+  font-size: var(--font-size-default);
+  color: var(--font-color-grey);
+}

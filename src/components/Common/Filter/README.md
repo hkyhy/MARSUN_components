@@ -36,30 +36,17 @@ const {
   FilterInput,
   FilterNumberRange,
   FilterSelect,
-} = _CommonFilter;
-
-const STATUS_OPTIONS = [
-  { label: '待提交', value: 'pending' },
-  { label: '审核中', value: 'reviewing' },
-  { label: '已通过', value: 'approved' },
-  { label: '已驳回', value: 'rejected' },
-];
-
-const DEPT_OPTIONS = [
-  { label: '技术部', value: 'tech' },
-  { label: '产品部', value: 'product' },
-  { label: '设计部', value: 'design' },
-  { label: '运营部', value: 'ops' },
-  { label: '市场部', value: 'market' },
-  { label: '财务部', value: 'finance' },
-];
+} = _Common;
+import { DEPT_OPTIONS, STATUS_OPTIONS } from './mock.js';
 
 const CommonFilterDemo = () => {
-  const [status, setStatus] = React.useState(undefined);
-  const [dept, setDept] = React.useState(undefined);
-  const [keyword, setKeyword] = React.useState(undefined);
-  const [dateRange, setDateRange] = React.useState(null);
-  const [scoreRange, setScoreRange] = React.useState(null);
+  const [status, setStatus] = useState<string | number>(undefined);
+  const [dept, setDept] = useState<string | number>(undefined);
+  const [keyword, setKeyword] = useState<string>(undefined);
+  const [dateRange, setDateRange] = useState<[string, string] | null>(null);
+  const [scoreRange, setScoreRange] = useState<[number, number] | null>(
+    null,
+  );
 
   return (
     <CommonFilter
@@ -108,26 +95,12 @@ render(<CommonFilterDemo />);
 - _CommonFilter(@components/Common/Filter),_Common(@components/Common),_antd(antd)
 
 ```jsx
-const { FilterSelect } = _CommonFilter;
-
-const SINGLE_SELECT_OPTIONS = [
-  { label: '选项一', value: 'a' },
-  { label: '选项二', value: 'b' },
-  { label: '选项三', value: 'c' },
-  { label: '选项四', value: 'd' },
-];
-
-const SEARCHABLE_OPTIONS = [
-  { label: '苹果', value: 'apple' },
-  { label: '香蕉', value: 'banana' },
-  { label: '橙子', value: 'orange' },
-  { label: '葡萄', value: 'grape' },
-  { label: '西瓜', value: 'watermelon' },
-];
+const { FilterSelect } = _Common;
+import { SEARCHABLE_OPTIONS, SINGLE_SELECT_OPTIONS } from '../mock';
 
 const FilterSelectDemo = () => {
-  const [value, setValue] = React.useState(undefined);
-  const [multiValue, setMultiValue] = React.useState(undefined);
+  const [value, setValue] = useState<string | number>(undefined);
+  const [multiValue, setMultiValue] = useState<string | number>(undefined);
 
   return (
     <div className={'filter-select-demo-root'}>
@@ -159,10 +132,13 @@ render(<FilterSelectDemo />);
 - _CommonFilter(@components/Common/Filter),_Common(@components/Common),_antd(antd)
 
 ```jsx
-const { FilterInput } = _CommonFilter;
+const { FilterInput } = _Common;
 
+/**
+ * FilterInput 输入框筛选示例
+ */
 const FilterInputDemo = () => {
-  const [value, setValue] = React.useState(undefined);
+  const [value, setValue] = useState<string>(undefined);
 
   return (
     <FilterInput
@@ -184,10 +160,13 @@ render(<FilterInputDemo />);
 - _CommonFilter(@components/Common/Filter),_Common(@components/Common),_antd(antd)
 
 ```jsx
-const { FilterDateRange } = _CommonFilter;
+const { FilterDateRange } = _Common;
 
+/**
+ * FilterDateRange 日期范围筛选示例
+ */
 const FilterDateRangeDemo = () => {
-  const [value, setValue] = React.useState(null);
+  const [value, setValue] = useState<[string, string] | null>(null);
 
   return (
     <FilterDateRange
@@ -209,14 +188,17 @@ render(<FilterDateRangeDemo />);
 - _CommonFilter(@components/Common/Filter),_Common(@components/Common),_antd(antd)
 
 ```jsx
-const { FilterNumberRange } = _CommonFilter;
+const { FilterNumberRange } = _Common;
 
+/**
+ * FilterNumberRange 数字范围筛选示例
+ */
 const FilterNumberRangeDemo = () => {
-  const [value, setValue] = React.useState(null);
+  const [value, setValue] = useState<[number, number] | null>(null);
 
   return (
     <FilterNumberRange
-      label="评分"
+      label="评分范围"
       filterKey="score"
       value={value}
       onChange={setValue}
@@ -234,8 +216,10 @@ render(<FilterNumberRangeDemo />);
 - _CommonFilter(@components/Common/Filter),_Common(@components/Common),_antd(antd)
 
 ```jsx
-const { FilterTreeSelect } = _CommonFilter;
+const { FilterTreeSelect } = _Common;
 
+
+/** Mock 部门树数据 */
 const MOCK_DEPT_TREE = [
   {
     id: 'root-1',
@@ -270,9 +254,9 @@ const MOCK_DEPT_TREE = [
 ];
 
 const FilterTreeSelectDemo = () => {
-  const [value, setValue] = React.useState(undefined);
+  const [value, setValue] = useState<string>(undefined);
 
-  const handleChange = (v) => {
+  const handleChange = (v: string | string[]) => {
     setValue(typeof v === 'string' ? v : undefined);
   };
 

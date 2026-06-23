@@ -1,5 +1,5 @@
 const { StatCard } = _Common;
-const { CloudUpload, FileText, User } = _icons;
+import { CloudUpload, FileText, User } from '@/icons';
 
 /** StatCard 单个卡片示例 */
 const StatCardSingleDemo = () => (

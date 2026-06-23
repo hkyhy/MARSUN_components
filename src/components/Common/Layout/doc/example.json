@@ -15,10 +15,6 @@
           "packageName": "@components/Common"
         },
         {
-          "name": "_kneButtonGroup",
-          "packageName": "@kne/button-group"
-        },
-        {
           "name": "_antd",
           "packageName": "antd"
         }

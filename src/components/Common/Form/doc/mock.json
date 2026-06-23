@@ -1,0 +1,162 @@
+{
+  "apis": {
+    "GET /departments/tree": {
+      "code": 0,
+      "message": "ok",
+      "data": [
+        {
+          "id": "dept-root-1",
+          "name": "技术中心",
+          "parentId": null,
+          "sort": 1,
+          "memberCount": 30,
+          "children": [
+            {
+              "id": "dept-child-1",
+              "name": "前端组",
+              "parentId": "dept-root-1",
+              "sort": 1,
+              "memberCount": 10
+            },
+            {
+              "id": "dept-child-2",
+              "name": "后端组",
+              "parentId": "dept-root-1",
+              "sort": 2,
+              "memberCount": 12
+            },
+            {
+              "id": "dept-child-3",
+              "name": "测试组",
+              "parentId": "dept-root-1",
+              "sort": 3,
+              "memberCount": 8
+            }
+          ]
+        },
+        {
+          "id": "dept-root-2",
+          "name": "产品中心",
+          "parentId": null,
+          "sort": 2,
+          "memberCount": 20,
+          "children": [
+            {
+              "id": "dept-child-4",
+              "name": "产品组",
+              "parentId": "dept-root-2",
+              "sort": 1,
+              "memberCount": 10
+            },
+            {
+              "id": "dept-child-5",
+              "name": "设计组",
+              "parentId": "dept-root-2",
+              "sort": 2,
+              "memberCount": 10
+            }
+          ]
+        },
+        {
+          "id": "dept-root-3",
+          "name": "行政部",
+          "parentId": null,
+          "sort": 3,
+          "memberCount": 5
+        }
+      ]
+    },
+    "GET /departments": {
+      "code": 0,
+      "message": "ok",
+      "data": [
+        {
+          "id": "dept-root-1",
+          "name": "技术中心",
+          "parentId": null,
+          "sort": 1,
+          "memberCount": 30
+        },
+        {
+          "id": "dept-child-1",
+          "name": "前端组",
+          "parentId": "dept-root-1",
+          "sort": 1,
+          "memberCount": 10
+        },
+        {
+          "id": "dept-child-2",
+          "name": "后端组",
+          "parentId": "dept-root-1",
+          "sort": 2,
+          "memberCount": 12
+        },
+        {
+          "id": "dept-child-3",
+          "name": "测试组",
+          "parentId": "dept-root-1",
+          "sort": 3,
+          "memberCount": 8
+        },
+        {
+          "id": "dept-root-2",
+          "name": "产品中心",
+          "parentId": null,
+          "sort": 2,
+          "memberCount": 20
+        },
+        {
+          "id": "dept-child-4",
+          "name": "产品组",
+          "parentId": "dept-root-2",
+          "sort": 1,
+          "memberCount": 10
+        },
+        {
+          "id": "dept-child-5",
+          "name": "设计组",
+          "parentId": "dept-root-2",
+          "sort": 2,
+          "memberCount": 10
+        },
+        {
+          "id": "dept-root-3",
+          "name": "行政部",
+          "parentId": null,
+          "sort": 3,
+          "memberCount": 5
+        }
+      ]
+    },
+    "GET /users/uploaders": {
+      "code": 0,
+      "message": "ok",
+      "data": [
+        {
+          "value": "user-1",
+          "label": "张三",
+          "departmentId": "dept-child-1",
+          "departmentName": "前端组",
+          "email": "zhangsan@example.com",
+          "employeeId": "E001"
+        },
+        {
+          "value": "user-2",
+          "label": "李四",
+          "departmentId": "dept-child-2",
+          "departmentName": "后端组",
+          "email": "lisi@example.com",
+          "employeeId": "E002"
+        },
+        {
+          "value": "user-3",
+          "label": "王五",
+          "departmentId": "dept-child-4",
+          "departmentName": "产品组",
+          "email": "wangwu@example.com",
+          "employeeId": "E003"
+        }
+      ]
+    }
+  }
+}

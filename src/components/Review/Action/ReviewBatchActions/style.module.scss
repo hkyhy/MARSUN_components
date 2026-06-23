@@ -1,0 +1,230 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-batch-actions-tag-small {
+  font-size: var(--font-size-small);
+}
+
+.review-batch-actions-empty {
+  margin-bottom: 16px;
+}
+
+.review-batch-actions-loading {
+  margin-bottom: 12px;
+}
+
+.review-batch-actions-content {
+  padding-bottom: 8px;
+}
+
+.review-batch-actions-aside {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.review-batch-actions-main {
+  color: var(--font-color-grey);
+  font-size: 12px;
+}
+
+.review-batch-actions-section {
+  font-size: 12px;
+}
+
+.review-batch-actions-group {
+  font-size: var(--font-size-small);
+}
+
+.review-batch-actions-cell {
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey);
+}
+
+.review-batch-actions-overlay {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-batch-actions-badge {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &:hover { color: var(--info-color); }
+}
+
+.review-batch-actions-tag {
+  font-size: 12px;
+  color: var(--font-color-grey-1);
+  margin-top: 4px;
+}
+
+.review-batch-actions-hint {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.review-batch-actions-sider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-batch-actions-nav {
+  font-weight: 600;
+}
+
+.review-batch-actions-menu {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.review-batch-actions-user-menu {
+  margin-top: 16px;
+}
+
+.review-batch-actions-avatar {
+  margin-bottom: 12px !important;
+}
+
+.review-batch-actions-upload {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.review-batch-actions-filter {
+  display: block;
+}

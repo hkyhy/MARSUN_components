@@ -77,7 +77,9 @@ const scanApisInDir = (dir) => {
       if (!/\.(tsx?|jsx?)$/.test(entry)) continue;
       const content = readFileSync(full, 'utf-8');
       for (const [method, endpoint] of Object.entries(API_METHOD_ENDPOINTS)) {
-        if (content.includes(method)) endpoints.add(endpoint);
+        const [api, fn] = method.split('.');
+        const pattern = new RegExp(`${api}\\s*\\.\\s*${fn}\\b`);
+        if (pattern.test(content)) endpoints.add(endpoint);
       }
       const directPaths = content.matchAll(/request\.(get|post|put|delete)\(\s*['`](\/[^'"`]+)['`]/g);
       for (const [, method, path] of directPaths) {

@@ -1,0 +1,25 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+.card-title-with-subtitle-root {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-title-with-subtitle-container {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--font-color-grey-1);
+  margin-top: 4px;
+  line-height: var(--line-height-default);
+}

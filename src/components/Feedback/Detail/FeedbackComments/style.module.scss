@@ -1,0 +1,229 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedback-comments-empty-comments {
+  padding: 16px 0;
+  text-align: center;
+  color: var(--font-color-grey-1);
+}
+
+.feedback-comments-comment-list {
+  @include flex-column(12px);
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.feedback-comments-comment-item {
+  display: flex;
+  gap: 12px;
+}
+
+.feedback-comments-comment-avatar {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feedback-comments-comment-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.feedback-comments-comment-header {
+  @include flex-row(8px);
+  margin-bottom: 2px;
+}
+
+.feedback-comments-comment-author {
+  font-weight: 500;
+  font-size: var(--font-size-default);
+}
+
+.feedback-comments-comment-time {
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey-1);
+}
+
+.feedback-comments-comment-content {
+  font-size: var(--font-size-default);
+  color: var(--font-color);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.feedback-comments-comments-card {
+  margin-top: 16px;
+}
+
+.feedback-comments-comment-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}

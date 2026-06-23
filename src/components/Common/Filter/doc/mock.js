@@ -1,5 +1,7 @@
+
+
 /** 状态选项 */
-export const STATUS_OPTIONS = [
+export const STATUS_OPTIONS: FilterOption[] = [
   { label: '待提交', value: 'pending' },
   { label: '审核中', value: 'reviewing' },
   { label: '已通过', value: 'approved' },
@@ -7,7 +9,7 @@ export const STATUS_OPTIONS = [
 ];
 
 /** 部门选项 */
-export const DEPT_OPTIONS = [
+export const DEPT_OPTIONS: FilterOption[] = [
   { label: '技术部', value: 'tech' },
   { label: '产品部', value: 'product' },
   { label: '设计部', value: 'design' },
@@ -17,7 +19,7 @@ export const DEPT_OPTIONS = [
 ];
 
 /** 单选示例选项 */
-export const SINGLE_SELECT_OPTIONS = [
+export const SINGLE_SELECT_OPTIONS: FilterOption[] = [
   { label: '选项一', value: 'a' },
   { label: '选项二', value: 'b' },
   { label: '选项三', value: 'c' },
@@ -25,10 +27,17 @@ export const SINGLE_SELECT_OPTIONS = [
 ];
 
 /** 可搜索示例选项 */
-export const SEARCHABLE_OPTIONS = [
+export const SEARCHABLE_OPTIONS: FilterOption[] = [
   { label: '苹果', value: 'apple' },
   { label: '香蕉', value: 'banana' },
   { label: '橙子', value: 'orange' },
   { label: '葡萄', value: 'grape' },
   { label: '西瓜', value: 'watermelon' },
 ];
+
+/** 构建已选条件列表的工具函数 */
+export function buildSelectedItems(
+  filters: Record<string, { label: string; valueLabel: string; onRemove: () => void } | null>,
+): SelectedItem[] {
+  return Object.values(filters).filter(Boolean) as SelectedItem[];
+}

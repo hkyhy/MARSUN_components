@@ -1,7 +1,12 @@
 const { SEMANTIC_COLORS, SemanticTag } = _Common;
-const { Table } = _antd;
+import { Table } from 'antd';
 
 
+interface MultiTagRow {
+  scene: string;
+  tags;
+  code: string;
+}
 
 const MULTI_TAG_DATA = [
   {

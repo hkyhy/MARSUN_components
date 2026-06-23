@@ -170,10 +170,17 @@ render(<SemanticTagBasicDemo />);
 
 ```jsx
 const { SEMANTIC_COLORS, SemanticTag } = _Common;
-const { Table } = _antd;
+import { Table } from 'antd';
 
 
 /** 标签行数据 */
+interface TagRowData {
+  scenario: string;
+  label: string;
+  status: string;
+  tagElement;
+  code: string;
+}
 
 /** 审核状态场景 — 参考 antd 文档图片风格 */
 const REVIEW_ROWS = [
@@ -332,9 +339,14 @@ render(<SemanticTagReviewDemo />);
 
 ```jsx
 const { SEMANTIC_COLORS, SemanticTag } = _Common;
-const { Table } = _antd;
+import { Table } from 'antd';
 
 
+interface MultiTagRow {
+  scene: string;
+  tags;
+  code: string;
+}
 
 const MULTI_TAG_DATA = [
   {

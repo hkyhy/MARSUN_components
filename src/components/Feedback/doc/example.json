@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "Feedback 组合",
+      "description": "筛选栏 + 时间线 + 操作按钮的完整反馈流程",
+      "code": "./feedback.js",
+      "scope": [
+        {
+          "name": "_Feedback",
+          "packageName": "@components/Feedback"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

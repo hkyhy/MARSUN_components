@@ -1,0 +1,198 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedback-timeline-timeline-item {
+  padding-bottom: 8px;
+}
+
+.feedback-timeline-timeline-header {
+  @include flex-row(8px);
+  margin-bottom: 4px;
+}
+
+.feedback-timeline-timeline-time {
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey);
+}
+
+.feedback-timeline-timeline-operator {
+  font-size: var(--font-size-default);
+  color: var(--font-color);
+}
+
+.feedback-timeline-timeline-status-change {
+  margin-top: 4px;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey-1);
+}
+
+.feedback-timeline-timeline-comment {
+  margin-top: 4px;
+  font-size: var(--font-size-default);
+  color: var(--font-color-grey);
+  white-space: pre-wrap;
+}
+
+.feedback-timeline-tag-small {
+  font-size: var(--font-size-small);
+}

@@ -2,7 +2,7 @@ const { UploaderSelect } = _Common;
 
 /** UploaderSelect 基础用法 */
 const UploaderSelectDemo = () => {
-  const [uploader, setUploader] = React.useState();
+  const [uploader, setUploader] = useState<string>();
 
   return (
     <div className={'uploader-select-demo-header'}>

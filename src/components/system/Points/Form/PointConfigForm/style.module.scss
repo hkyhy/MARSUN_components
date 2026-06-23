@@ -1,0 +1,59 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.point-config-form-config-card {
+  margin: 16px 0;
+}
+
+.point-config-form-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 24px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.point-config-form-full-width {
+  width: 100%;
+}
+
+.point-config-form-inner {
+  margin-top: 16px; margin-bottom: 16px;
+}
+
+.point-config-form-header {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: 768px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.point-config-form-body {
+  width: 100%;
+}

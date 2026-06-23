@@ -1,5 +1,5 @@
 const { default: CitationInlineBadge } = _AgentHubChatDetailCitationInlineBadge;
-const { Typography } = _antd;
+import { Typography } from 'antd';
 
 const { Text } = Typography;
 
