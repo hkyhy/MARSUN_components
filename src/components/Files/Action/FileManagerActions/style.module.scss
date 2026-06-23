@@ -1,0 +1,409 @@
+@use '@/styles/mixins' as *;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.file-manager-actions-alert-spacing {
+  margin-top: 8px;
+}
+
+.file-manager-actions-thumb {
+  margin-bottom: 16px;
+}
+
+.file-manager-actions-stats {
+  font-weight: 600;
+}
+
+.file-manager-actions-chart {
+  display: block;
+}
+
+.file-manager-actions-grid {
+  margin-bottom: 12px;
+}
+
+.file-manager-actions-block {
+  cursor: pointer;
+}
+
+.file-manager-actions-box {
+  margin-right: 4px;
+}
+
+.file-manager-actions-field {
+  font-weight: 500;
+}
+
+.file-manager-actions-input {
+  display: block;
+}
+
+.file-manager-actions-output {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.file-manager-actions-status {
+  margin-bottom: 8px;
+}
+
+.file-manager-actions-info {
+  flex: 1;
+  overflow: auto;
+}
+
+.file-manager-actions-detail {
+  display: flex;
+}
+
+.file-manager-actions-summary {
+  display: block;
+}
+
+.file-manager-actions-media {
+  margin-top: 8px;
+}
+
+.file-manager-actions-figure {
+  display: block;
+}
+
+.file-manager-actions-caption {
+  margin-top: 4px;
+  max-height: 192px;
+  overflow: auto;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey);
+  padding-left: 16px;
+}
+
+.file-manager-actions-divider {
+  margin-top: 4px;
+  max-height: 160px;
+  overflow: auto;
+  font-size: var(--font-size-small);
+  padding-left: 16px;
+}
+
+.file-manager-actions-block1 {
+  margin-top: 8px;
+  border-width: 1px; border-style: solid;
+  border-color: var(--font-color-grey-4);
+  padding: 8px;
+  max-height: 288px;
+  overflow: auto;
+}
+
+.file-manager-actions-block2 {
+  font-size: 12px;
+}
+
+.file-manager-actions-block3 {
+  margin-top: 4px;
+}
+
+.file-manager-actions-block4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--font-color-grey-1);
+  margin-top: 8px;
+}
+
+.file-manager-actions-block5 {
+  text-align: left;
+}
+
+.file-manager-actions-block6 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-manager-actions-block7 {
+  margin-top: 8px;
+  max-height: 192px;
+  overflow: auto;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey);
+}
+
+.file-manager-actions-block8 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.file-manager-actions-block9 {
+  font-weight: 600;
+}
+
+.file-manager-actions-block10 {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-manager-actions-block11 {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-manager-actions-block12 {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-manager-actions-block13 {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.file-manager-actions-block14 {
+  margin-right: 6px;
+}
+
+.file-manager-actions-block15 {
+  display: block;
+}

@@ -1,6 +1,6 @@
 const { StepForm } = _Common;
 
-const { Form, Input, Select } = _antd;
+import { Form, Input, Select } from 'antd';
 
 const steps = [
   {

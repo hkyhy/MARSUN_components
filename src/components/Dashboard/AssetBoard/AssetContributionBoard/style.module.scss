@@ -1,0 +1,436 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.asset-contribution-board-root {
+  display: block;
+}
+
+.asset-contribution-board-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asset-contribution-board-wrapper {
+  font-size: var(--font-size-24);
+}
+
+.asset-contribution-board-inner {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.asset-contribution-board-header {
+  font-weight: 400 !important;
+  margin-left: 8px;
+}
+
+.asset-contribution-board-body {
+  display: block;
+  margin-top: 6px;
+  font-size: var(--font-size-small);
+}
+
+.asset-contribution-board-footer {
+  display: block;
+}
+
+.asset-contribution-board-content {
+  background-color: #1a1625;
+  border-radius: 12px;
+  padding-left: 24px; padding-right: 24px;
+  padding-top: 16px; padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asset-contribution-board-aside {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.asset-contribution-board-main {
+  color: var(--font-color-grey-1);
+  font-size: var(--font-size-small);
+}
+
+.asset-contribution-board-section {
+  background-color: #1a1625;
+  border-radius: 12px;
+  padding-left: 24px; padding-right: 24px;
+  padding-top: 16px; padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.asset-contribution-board-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.asset-contribution-board-cell {
+  font-size: var(--font-size-large);
+}
+
+.asset-contribution-board-overlay {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.asset-contribution-board-badge {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.asset-contribution-board-tag {
+  font-size: var(--font-size-small);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.asset-contribution-board-hint {
+  display: block;
+}
+
+.asset-contribution-board-sider {
+  font-weight: 500;
+}
+
+.asset-contribution-board-nav {
+  font-weight: 500;
+}
+
+.asset-contribution-board-menu {
+  flex-shrink: 0;
+}
+
+.asset-contribution-board-user-menu {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.asset-contribution-board-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.asset-contribution-board-upload {
+  display: block;
+}
+
+.asset-contribution-board-filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  flex: 1;
+}
+
+.asset-contribution-board-table {
+  min-width: 0;
+  flex: 1;
+}
+
+.asset-contribution-board-form {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  max-width: 160px;
+  display: inline-block;
+}
+
+.asset-contribution-board-modal {
+  margin: 0 !important;
+}
+
+.asset-contribution-board-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--font-color-grey);
+}
+
+.asset-contribution-board-scroll {
+  font-weight: 500 !important;
+}
+
+.asset-contribution-board-viewport {
+  display: block;
+}
+
+.asset-contribution-board-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.asset-contribution-board-track {
+  font-size: var(--font-size-large) !important;
+  font-weight: 700 !important;
+}
+
+.asset-contribution-board-banner {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.asset-contribution-board-stats {
+  margin-top: 2px !important;
+  font-size: 12px !important;
+}
+
+.asset-contribution-board-chart {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.asset-contribution-board-grid {
+  font-size: 12px;
+}
+
+.asset-contribution-board-block {
+  width: 16px;
+}
+
+.asset-contribution-board-box {
+  display: block;
+}
+
+.asset-contribution-board-field {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.asset-contribution-board-input {
+  display: block;
+}
+
+.asset-contribution-board-output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px; padding-right: 12px;
+  padding-top: 14px; padding-bottom: 14px;
+  border-radius: 8px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}

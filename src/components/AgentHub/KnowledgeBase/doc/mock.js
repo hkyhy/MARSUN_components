@@ -1,6 +1,6 @@
 
 
-export const mockDatasets = [
+export const mockDatasets: Dataset[] = [
   {
     id: 'kb-1',
     name: '企业制度手册',
@@ -42,7 +42,7 @@ export const mockDatasets = [
   },
 ];
 
-export const mockDocuments = [
+export const mockDocuments: KBDocument[] = [
   {
     id: 'doc-1',
     name: '员工休假管理制度.pdf',

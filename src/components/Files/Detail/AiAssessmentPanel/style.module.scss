@@ -1,0 +1,220 @@
+@use '@/styles/mixins' as *;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ai-assessment-panel-panel-card {
+  margin-top: 16px;
+}
+
+.ai-assessment-panel-loading-row {
+  @include flex-row(8px);
+  color: var(--info-color);
+}
+
+.ai-assessment-panel-level-row {
+  @include flex-row(8px);
+  margin-bottom: 12px;
+}
+
+.ai-assessment-panel-dimension-list {
+  @include flex-column(8px);
+  font-size: var(--font-size-default);
+}
+
+.ai-assessment-panel-assessed-at {
+  display: block;
+  margin-top: 12px;
+  font-size: var(--font-size-small);
+}
+
+.ai-assessment-panel-summary-paragraph {
+  margin-bottom: 12px !important;
+}
+
+.ai-assessment-panel-fail-hint {
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+}

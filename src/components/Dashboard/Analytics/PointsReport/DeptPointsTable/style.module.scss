@@ -1,0 +1,63 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dept-points-table-header {
+  font-weight: 500;
+}
+
+.dept-points-table-body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dept-points-table-footer {
+  flex: 1;
+}
+
+.dept-points-table-row {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  width: 40px;
+  text-align: right;
+}
+
+.dept-points-table-col {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  width: 48px;
+  text-align: right;
+}

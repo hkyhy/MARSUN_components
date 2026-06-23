@@ -1,0 +1,57 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-form-form-title {
+  margin-bottom: 4px !important;
+  text-align: center;
+}
+
+.login-form-form-subtitle {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.login-form-form-footer {
+  text-align: right;
+}
+
+.login-form-form-link {
+  font-size: var(--font-size-default);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

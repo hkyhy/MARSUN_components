@@ -1,7 +1,10 @@
-const { FilterDateRange } = _CommonFilter;
+const { FilterDateRange } = _Common;
 
+/**
+ * FilterDateRange 日期范围筛选示例
+ */
 const FilterDateRangeDemo = () => {
-  const [value, setValue] = React.useState(null);
+  const [value, setValue] = useState<[string, string] | null>(null);
 
   return (
     <FilterDateRange

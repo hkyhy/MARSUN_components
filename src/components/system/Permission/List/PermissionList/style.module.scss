@@ -1,0 +1,113 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.permission-list-aside {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+  @media (min-width: 640px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (min-width: 1024px) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.permission-list-main {
+  padding: 12px;
+  background-color: var(--bg-color-grey);
+  border-width: 1px; border-style: solid;
+  border-color: var(--font-color-grey-4);
+}
+
+.permission-list-section {
+  font-weight: 500;
+  font-size: var(--font-size-small);
+}
+
+.permission-list-group {
+  font-size: 12px;
+  color: var(--font-color-grey-1);
+  margin-top: 4px;
+}
+
+.permission-list-cell {
+  margin-top: 8px;
+}
+
+.permission-list-overlay {
+  font-size: 12px;
+}

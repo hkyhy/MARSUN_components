@@ -1,0 +1,77 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dept-tree-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 4px; padding-bottom: 4px;
+}
+
+.dept-tree-empty {
+  flex: 1;
+}
+
+.dept-tree-loading {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-left: 8px;
+}

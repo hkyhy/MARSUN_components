@@ -1,23 +1,9 @@
-const { FilterSelect } = _CommonFilter;
-
-const SINGLE_SELECT_OPTIONS = [
-  { label: '选项一', value: 'a' },
-  { label: '选项二', value: 'b' },
-  { label: '选项三', value: 'c' },
-  { label: '选项四', value: 'd' },
-];
-
-const SEARCHABLE_OPTIONS = [
-  { label: '苹果', value: 'apple' },
-  { label: '香蕉', value: 'banana' },
-  { label: '橙子', value: 'orange' },
-  { label: '葡萄', value: 'grape' },
-  { label: '西瓜', value: 'watermelon' },
-];
+const { FilterSelect } = _Common;
+import { SEARCHABLE_OPTIONS, SINGLE_SELECT_OPTIONS } from '../mock';
 
 const FilterSelectDemo = () => {
-  const [value, setValue] = React.useState(undefined);
-  const [multiValue, setMultiValue] = React.useState(undefined);
+  const [value, setValue] = useState<string | number>(undefined);
+  const [multiValue, setMultiValue] = useState<string | number>(undefined);
 
   return (
     <div className={'filter-select-demo-root'}>

@@ -61,7 +61,7 @@
 - _CommonTour(@components/Common/Tour),_antd(antd)
 
 ```jsx
-const { Typography } = _antd;
+import { Typography } from 'antd';
 
 const { Paragraph, Text } = Typography;
 
@@ -74,9 +74,9 @@ const INTERFACE_CODE = &#96;interface AppTourProps {
 }
 
 // 菜单模块通过 data-tour-menu 锚点定位，在 MainLayout 的 Menu label 上标记
-const quickUploadRef = React.useRef(null);
-const contentRef = React.useRef(null);
-const userMenuRef = React.useRef(null);
+const quickUploadRef = useRef<HTMLElement>(null);
+const contentRef = useRef<HTMLElement>(null);
+const userMenuRef = useRef<HTMLElement>(null);
 
 <AppTour refs={{ quickUpload: quickUploadRef, content: contentRef, userMenu: userMenuRef }} />&#96;;
 
@@ -97,7 +97,10 @@ const TourDemo = () => (
     <div className={'tour-demo-inner'}>
       <h4 className={'tour-demo-header'}>组件接口</h4>
       <Paragraph copyable={{ text: INTERFACE_CODE, tooltips: ['复制代码', '已复制'] }}>
-        <Text code className={'tour-demo-body'}>
+        <Text
+          code
+          className={'tour-demo-body'}
+        >
           {INTERFACE_CODE}
         </Text>
       </Paragraph>
@@ -118,7 +121,10 @@ const TourDemo = () => (
         </Text>
       </Paragraph>
       <Paragraph copyable={{ text: RESET_CODE, tooltips: ['复制代码', '已复制'] }}>
-        <Text code className={'tour-demo-body'}>
+        <Text
+          code
+          className={'tour-demo-body'}
+        >
           {RESET_CODE}
         </Text>
       </Paragraph>

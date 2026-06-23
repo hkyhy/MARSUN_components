@@ -1,8 +1,8 @@
 const { DepartmentSelect, UploaderSelect } = _Common;
 
 const FormSelectsDemo = () => {
-  const [dept, setDept] = React.useState();
-  const [uploader, setUploader] = React.useState();
+  const [dept, setDept] = useState<string>();
+  const [uploader, setUploader] = useState<string>();
 
   return (
     <div className={'department-select-demo-header'}>

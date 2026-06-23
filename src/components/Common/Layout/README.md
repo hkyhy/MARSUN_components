@@ -19,14 +19,14 @@
 
 - 基础用法
 - PageHeaderLayout 标题 + 操作按钮组合
-- _CommonLayout(@components/Common/Layout),_Common(@components/Common),_kneButtonGroup(@kne/button-group),_antd(antd)
+- _CommonLayout(@components/Common/Layout),_Common(@components/Common),_antd(antd)
 
 ```jsx
 const { PageHeaderLayout } = _Common;
-const { default: ButtonGroup } = _kneButtonGroup;
+import ButtonGroup from '@kne/button-group';
 
 const PageHeaderLayoutDemo = () => {
-  const headerListArray = [
+  const headerListArray: Record<string, unknown>[] = [
     {
       children: '新建文件夹',
       onClick: () => console.log('新建文件夹'),

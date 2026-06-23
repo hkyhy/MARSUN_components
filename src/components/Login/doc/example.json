@@ -1,0 +1,35 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "登录表单",
+      "description": "LoginForm 工号+密码登录，底部含忘记密码链接",
+      "code": "./login-form.js",
+      "scope": [
+        {
+          "name": "_Login",
+          "packageName": "@components/Login"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "忘记密码表单",
+      "description": "ForgotPasswordForm 工号+姓名验证身份后重置密码，底部含返回登录链接",
+      "code": "./forgot-password-form.js",
+      "scope": [
+        {
+          "name": "_Login",
+          "packageName": "@components/Login"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

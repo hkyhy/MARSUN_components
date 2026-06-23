@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "System 组合",
+      "description": "部门管理 + 用户管理 + 权限配置",
+      "code": "./system.js",
+      "scope": [
+        {
+          "name": "_system",
+          "packageName": "@components/system"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+@use '@/styles/mixins' as *;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upload-modal-upload-status-uploading {
+  @include flex-row(4px);
+  font-size: var(--font-size-small);
+  color: var(--info-color);
+}
+
+.upload-modal-upload-status-success {
+  @include flex-row(4px);
+  font-size: var(--font-size-small);
+  color: var(--success-color);
+}
+
+.upload-modal-upload-status-fail {
+  @include flex-row(4px);
+  font-size: var(--font-size-small);
+  color: var(--error-color);
+}
+
+.upload-modal-hint-row {
+  @include flex-row(6px);
+  margin-top: 8px;
+  font-size: var(--font-size-small);
+  color: var(--font-color-grey-1);
+}
+
+.upload-modal-footer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

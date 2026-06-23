@@ -28,14 +28,7 @@ const PersonOptionRow: React.FC<PersonOptionRowProps> = ({ option, className }) 
       {departmentName ? (
         <span className={classNames('person-option-row-wrapper', styles['person-option-row-wrapper'])}>{departmentName}</span>
       ) : null}
-      <Popover
-        content={infoContent}
-        title={label}
-        trigger="hover"
-        placement="right"
-        getPopupContainer={() => document.body}
-        zIndex={1100}
-      >
+      <Popover content={infoContent} title={label} trigger="hover" placement="right">
         <Info
           className={classNames('person-option-row-inner', styles['person-option-row-inner'])}
           onMouseDown={(e) => e.stopPropagation()}

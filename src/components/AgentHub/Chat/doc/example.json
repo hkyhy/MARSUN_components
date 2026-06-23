@@ -291,10 +291,6 @@
           "packageName": "@components/Common/VirtualScrollbar"
         },
         {
-          "name": "_AgentHubChatUtilsSmoothScroll",
-          "packageName": "@components/AgentHub/Chat/utils/smoothScroll"
-        },
-        {
           "name": "_antd",
           "packageName": "antd"
         }

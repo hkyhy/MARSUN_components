@@ -1,0 +1,135 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-descriptions-info-section {
+  margin-top: 24px;
+}
+
+.user-descriptions-info-title {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.user-descriptions-import-section {
+  margin-bottom: 16px;
+}
+
+.user-descriptions-template-row {
+  @include flex-between;
+  margin-bottom: 8px;
+}
+
+.user-descriptions-template-label {
+  color: var(--font-color-grey);
+}
+
+.user-descriptions-template-list {
+  list-style: disc;
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+.user-descriptions-alert-spacing {
+  margin-bottom: 12px;
+}
+
+.user-descriptions-error-alert {
+  margin-top: 12px;
+}
+
+.user-descriptions-validation-list {
+  list-style: disc;
+  padding-left: 16px;
+  margin-bottom: 0;
+  max-height: 128px;
+  overflow-y: auto;
+  font-size: var(--font-size-small);
+}
+
+.user-descriptions-preview-table {
+  margin-top: 16px;
+}
+
+.user-descriptions-full-width {
+  width: 100%;
+}
+
+.user-descriptions-card {
+  margin-top: 24px;
+}
+
+.user-descriptions-item {
+  font-weight: 500;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,11 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "token": "mock-token",
+    "user": {
+      "id": "user-1",
+      "displayName": "演示用户"
+    }
+  }
+}

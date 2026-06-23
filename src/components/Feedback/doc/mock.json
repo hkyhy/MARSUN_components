@@ -1,0 +1,12 @@
+{
+  "apis": {
+    "GET /feedbacks": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "list": [],
+        "total": 0
+      }
+    }
+  }
+}

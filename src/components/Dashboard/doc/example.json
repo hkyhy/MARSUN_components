@@ -1,0 +1,24 @@
+{
+  "isFull": false,
+  "list": [
+    {
+      "title": "资产贡献榜",
+      "description": "AssetContributionBoard 数据可视化面板",
+      "code": "./asset-board.js",
+      "scope": [
+        {
+          "name": "_Dashboard",
+          "packageName": "@components/Dashboard"
+        },
+        {
+          "name": "_Common",
+          "packageName": "@components/Common"
+        },
+        {
+          "name": "_antd",
+          "packageName": "antd"
+        }
+      ]
+    }
+  ]
+}

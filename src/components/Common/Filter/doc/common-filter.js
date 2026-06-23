@@ -4,30 +4,17 @@ const {
   FilterInput,
   FilterNumberRange,
   FilterSelect,
-} = _CommonFilter;
-
-const STATUS_OPTIONS = [
-  { label: '待提交', value: 'pending' },
-  { label: '审核中', value: 'reviewing' },
-  { label: '已通过', value: 'approved' },
-  { label: '已驳回', value: 'rejected' },
-];
-
-const DEPT_OPTIONS = [
-  { label: '技术部', value: 'tech' },
-  { label: '产品部', value: 'product' },
-  { label: '设计部', value: 'design' },
-  { label: '运营部', value: 'ops' },
-  { label: '市场部', value: 'market' },
-  { label: '财务部', value: 'finance' },
-];
+} = _Common;
+import { DEPT_OPTIONS, STATUS_OPTIONS } from './mock.js';
 
 const CommonFilterDemo = () => {
-  const [status, setStatus] = React.useState(undefined);
-  const [dept, setDept] = React.useState(undefined);
-  const [keyword, setKeyword] = React.useState(undefined);
-  const [dateRange, setDateRange] = React.useState(null);
-  const [scoreRange, setScoreRange] = React.useState(null);
+  const [status, setStatus] = useState<string | number>(undefined);
+  const [dept, setDept] = useState<string | number>(undefined);
+  const [keyword, setKeyword] = useState<string>(undefined);
+  const [dateRange, setDateRange] = useState<[string, string] | null>(null);
+  const [scoreRange, setScoreRange] = useState<[number, number] | null>(
+    null,
+  );
 
   return (
     <CommonFilter

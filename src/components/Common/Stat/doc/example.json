@@ -15,10 +15,6 @@
           "packageName": "@components/Common"
         },
         {
-          "name": "_icons",
-          "packageName": "@/icons"
-        },
-        {
           "name": "_antd",
           "packageName": "antd"
         }
@@ -36,10 +32,6 @@
         {
           "name": "_Common",
           "packageName": "@components/Common"
-        },
-        {
-          "name": "_icons",
-          "packageName": "@/icons"
         },
         {
           "name": "_antd",

@@ -1,0 +1,33 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detail-modal-json-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: var(--font-size-small);
+}
+
+.detail-modal-detail-section {
+  margin-top: 16px;
+}
+
+.detail-modal-detail-section-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+}

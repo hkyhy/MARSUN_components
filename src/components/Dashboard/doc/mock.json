@@ -1,0 +1,59 @@
+{
+  "apis": {
+    "GET /files": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "list": [
+          {
+            "id": "1",
+            "name": "项目需求文档.docx",
+            "type": "FILE",
+            "size": 1024000,
+            "extension": ".docx",
+            "parentId": null,
+            "departmentId": "dept-child-1",
+            "departmentName": "前端组",
+            "uploaderId": "user-1",
+            "uploaderName": "张三",
+            "reviewStatus": "APPROVED",
+            "version": 1,
+            "createdAt": "2026-01-15T10:30:00Z",
+            "updatedAt": "2026-01-15T10:30:00Z"
+          },
+          {
+            "id": "4",
+            "name": "系统架构图.png",
+            "type": "FILE",
+            "size": 2048000,
+            "extension": ".png",
+            "parentId": null,
+            "departmentId": "dept-child-1",
+            "departmentName": "前端组",
+            "uploaderId": "user-1",
+            "uploaderName": "张三",
+            "reviewStatus": "APPROVED",
+            "version": 1,
+            "createdAt": "2026-01-20T11:00:00Z",
+            "updatedAt": "2026-01-20T11:00:00Z"
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "pageSize": 20
+      }
+    },
+    "GET /statistics/overview": {
+      "code": 0,
+      "message": "ok",
+      "data": {
+        "totalFiles": 128,
+        "pendingReview": 12,
+        "approved": 98,
+        "rejected": 5,
+        "totalStorage": 1024,
+        "monthlyUploads": 42
+      }
+    }
+  }
+}

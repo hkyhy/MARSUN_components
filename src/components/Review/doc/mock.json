@@ -1,0 +1,20 @@
+{
+  "apis": {
+    "GET /permissions/reviewers": {
+      "code": 0,
+      "message": "ok",
+      "data": [
+        {
+          "value": "user-2",
+          "label": "李四",
+          "departmentName": "后端组"
+        },
+        {
+          "value": "user-4",
+          "label": "赵六",
+          "departmentName": "测试组"
+        }
+      ]
+    }
+  }
+}

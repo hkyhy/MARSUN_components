@@ -1,0 +1,186 @@
+@use '@/styles/mixins' as *;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.points-guide-row {
+  height: 100%;
+}
+
+.points-guide-col {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.points-guide-wrap {
+  display: block;
+}
+
+.points-guide-panel {
+  display: block;
+}
+
+.points-guide-card {
+  padding: 8px;
+}
+
+.points-guide-item {
+  margin-bottom: 8px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.points-guide-link {
+  font-size: 12px !important;
+  color: var(--font-color-grey) !important;
+  line-height: var(--line-height-default);
+  margin-bottom: 4px !important;
+}
+
+.points-guide-label {
+  font-size: 12px !important;
+  color: var(--font-color-grey) !important;
+  line-height: var(--line-height-default);
+}
+
+.points-guide-value {
+  font-size: var(--font-size-small);
+}

@@ -1,0 +1,70 @@
+/** Mock 反馈列表数据 */
+export const mockFeedbackList = [
+  {
+    id: '1',
+    title: '文件上传速度慢',
+    category: 'performance',
+    priority: 'high',
+    status: 'processing',
+    creator: '张三',
+    createdAt: '2026-05-20',
+    assignee: '李工',
+  },
+  {
+    id: '2',
+    title: '审核流程需要优化',
+    category: 'feature',
+    priority: 'medium',
+    status: 'pending',
+    creator: '王五',
+    createdAt: '2026-05-19',
+    assignee: null,
+  },
+  {
+    id: '3',
+    title: '移动端页面适配问题',
+    category: 'bug',
+    priority: 'low',
+    status: 'resolved',
+    creator: '赵六',
+    createdAt: '2026-05-18',
+    assignee: '陈工',
+  },
+  {
+    id: '4',
+    title: '导出功能报错',
+    category: 'bug',
+    priority: 'high',
+    status: 'pending',
+    creator: '孙七',
+    createdAt: '2026-05-17',
+    assignee: null,
+  },
+  {
+    id: '5',
+    title: '希望增加批量操作',
+    category: 'feature',
+    priority: 'medium',
+    status: 'processing',
+    creator: '周八',
+    createdAt: '2026-05-16',
+    assignee: '吴工',
+  },
+] as const;
+
+/** Mock 反馈详情 */
+export const mockFeedbackDetail = {
+  id: '1',
+  title: '文件上传速度慢',
+  category: 'performance',
+  priority: 'high',
+  status: 'processing',
+  creator: '张三',
+  createdAt: '2026-05-20',
+  assignee: '李工',
+  description: '上传大于10MB的文件时，进度条长时间停留在80%左右，最终超时失败。',
+  timeline: [
+    { user: '李工', action: '开始处理', time: '05-20 14:30', color: 'blue' },
+    { user: '张三', action: '创建反馈', time: '05-20 10:00', color: 'green' },
+  ],
+} as const;
